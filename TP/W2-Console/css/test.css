@@ -22,8 +22,3 @@ table {
     color: black; /* Changes the text color to black for better visibility */
     /* Retains the green border */
 }
-
-tr:nth-child(even) {
-    background-color: #1a2b17; /* Adds a background color to even rows */
-}
-  
