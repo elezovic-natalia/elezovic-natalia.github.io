@@ -1,4 +1,30 @@
-h1, h3 {
+h1 {
+
     color: maroon;
-    font-family:'Courier New', Courier, monospace;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+h2 {
+    display: inline;
+    color:maroon;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 60px;
+}
+
+.module {
+    display: flex;
+    align-items: center; /* Centers the checkbox and text vertically */
+    margin-bottom: 10px; /* Adds some space between each checklist item */
+}
+
+/* Style for the input type checkbox to maybe reduce its size if needed */
+input[type="checkbox"] {
+    margin-right: 5px; /* Adds some space to the right of the checkbox */
+}
+
+/* Style for checked items */
+.checked {
+    text-decoration: line-through; /* If you want to strike through checked items */
+}
+
+

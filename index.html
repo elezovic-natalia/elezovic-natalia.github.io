@@ -3,15 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="images/controller.ico" type="image/x-icon">
-    <link rel="stylesheet" href="index.css"
+    <link rel="icon" href="controller.ico" type="image/x-icon">
+    <link rel="stylesheet" href="index.css">
+
+    <script>
+        // This function is called whenever a checkbox is clicked
+        function toggleCheck(checkbox, id) {
+            var element = document.getElementById(id);
+
+            if (checkbox.checked) {
+                element.classList.add('checked');
+            } else {
+                element.classList.remove('checked');
+            }
+
+            // Optionally, save the checklist state to local storage or handle it otherwise
+        }
+    </script>
 </head>
+
 <body>
-    <h1>Digital Chalkboard, Week 2</h1>
-    <h3>Course Schedule</h3>
-    <p id="module01" >First paragraph: Structure of VS Code Directories</p>
-    <p id="module02" class="info-text">Second paragraph: Creating a GitHub Page</p>
-    <p id="module03" class="info-text">Third paragraph: Creating Our First HTML Page</p>
+    <h1>Data Publication Course</h1>
+    <h2>Spring 2024, The University of Chicago</h2>
+
+    <label class="module">
+        <input type="checkbox" id="module01" onclick="toggleCheck(this, 'module01')" />
+        In our first module, we delve into the architecture of Visual Studio Code...
+    </label>
+    
+    <label class="module">
+        <input type="checkbox" id="module02" onclick="toggleCheck(this, 'module02')" />
+        The second module focuses on GitHub Pages...
+    </label>
+
+    <label class="module">
+        <input type="checkbox" id="module03" onclick="toggleCheck(this, 'module01')" />
+        In our first module, we delve into the architecture of Visual Studio Code...
+    </label>
+
+
 </body>
 
 </html>
+
+<pre>
+
+    ██▒▒▒▒▒▒▒▒ 20% Progress            
+    
+</pre>
