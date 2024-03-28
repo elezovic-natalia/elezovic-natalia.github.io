@@ -1,7 +1,29 @@
 body {
     background-color: black;
     color: green;
-    font-family:'Courier New', Courier, monospace;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 20px;
 }
+
+table {
+    width: 100%;
+    border-collapse: collapse; /* Removes the space between borders */
+  }
+  
+  th, td {
+    border: 1px solid green; /* Adds a green border */
+    padding: 8px; /* Adds space between the text and the borders */
+    text-align: left; /* Aligns the text to the left */
+  }
+  
+  th {
+    background-color: #00FF00; /* Changes the background to bright green */
+    color: black; /* Changes the text color to black for better visibility */
+    /* Retains the green border */
+}
+
+tr:nth-child(even) {
+    background-color: #1a2b17; /* Adds a background color to even rows */
+}
+  
