@@ -1,47 +1,22 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="controller.ico" type="image/x-icon">
     <link rel="stylesheet" href="index.css">
-
-    <script>
-        // This function is called whenever a checkbox is clicked
-        function toggleCheck(checkbox, id) {
-            var element = document.getElementById(id);
-
-            if (checkbox.checked) {
-                element.classList.add('checked');
-            } else {
-                element.classList.remove('checked');
-            }
-
-            // Optionally, save the checklist state to local storage or handle it otherwise
-        }
-    </script>
 </head>
 
 <body>
-    <h1>Data Publication Course</h1>
-    <h2>Spring 2024, The University of Chicago</h2>
+    <h1>Data Publication Course at The University of Chicago</h1>
+    <h2>Module 1 will cover:</h2>
 
-    <label class="module">
-        <input type="checkbox" id="module01" onclick="toggleCheck(this, 'module01')" />
-        In our first module, we delve into the architecture of Visual Studio Code...
-    </label>
-    
-    <label class="module">
-        <input type="checkbox" id="module02" onclick="toggleCheck(this, 'module02')" />
-        The second module focuses on GitHub Pages...
-    </label>
-
-    <label class="module">
-        <input type="checkbox" id="module03" onclick="toggleCheck(this, 'module01')" />
-        In our first module, we delve into the architecture of Visual Studio Code...
-    </label>
-
-
+<p id="module01"> ✔ The structure of VS Code directories</p>
+<p id="module02" class="info-text">✔ How to set up GitHub Pages</p>
+<p id="module03" class="info-text">✔ How to create out first HTML page</p>
+<p id="module04" class="info-text">✔ How to create out first CSS page</p>
 </body>
 
 </html>
