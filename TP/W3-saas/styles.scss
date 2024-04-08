@@ -11,7 +11,65 @@ $std-margin-left: 15px;
   padding: 1.2rem;
   display: flex;
   align-items: center;
+
+  ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+
+    li {
+      margin-right: 1.2rem;
+
+      a {
+        text-decoration: none;
+        color: $chicago-light-grey;
+        font-family: $font-stack;
+
+        &:hover {
+          color: $chicago-dark-grey;
+        }
+
+        &.active,
+        &.bold {
+          color: $white;
+          font-weight: bold;
+          font-size: 18px;
+        }
+      }
+    }
+  }
 }
+
+@mixin flex-container {
+  display: flex;
+  align-items: center;
+  padding: 1.2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  @include flex-container;
+  background-color: $chicago-maroon;
+}
+
+.footer {
+  @include flex-container;
+  background-color: $chicago-light-grey;
+}
+
+@mixin button($bgColor, $textColor) {
+  display: flex;
+  background-color: $bgColor;
+  color: $textColor;
+}
+
+.black-button {
+  @include button(#000000, #FFFFFF);
+}
+
 
 h1 {
   margin-left: $std-margin-left;
