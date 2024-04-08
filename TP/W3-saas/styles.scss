@@ -1,0 +1,25 @@
+$chicago-maroon: #800000;
+$chicago-dark-grey: #767676;
+$chicago-light-grey: #D6D6CE;
+$white: #FFFFFF;
+$black: #000000;
+$font-stack: Helvetica, sans-serif;
+$std-margin-left: 15px;
+
+.navbar {
+  background-color: $chicago-maroon;
+  padding: 1.2rem;
+  display: flex;
+  align-items: center;
+}
+
+h1 {
+  margin-left: $std-margin-left;
+  color: $black;
+}
+
+h3 {
+  margin-left: $std-margin-left;
+  color: $chicago-dark-grey;
+}
+
