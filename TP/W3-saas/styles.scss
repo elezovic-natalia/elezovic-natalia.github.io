@@ -1,83 +1,89 @@
-$chicago-maroon: #800000;
-$chicago-dark-grey: #767676;
-$chicago-light-grey: #D6D6CE;
-$white: #FFFFFF;
-$black: #000000;
-$font-stack: Helvetica, sans-serif;
-$std-margin-left: 15px;
+// Color palette based on the screenshot
+$primary-color: #800000; // A maroon color, possibly for the navbar and headings
+$secondary-color: #D6D6CE; // A light grey color, perhaps for text or backgrounds
+$text-color: #000000; // Default text color
+$link-color: #0000EE; // Default link color, assuming standard blue
+$link-hover-color: #767676; // A grey color for link hover states
+$background-color: #FFFFFF; // White background
 
-.navbar {
-  background-color: $chicago-maroon;
-  padding: 1.2rem;
+// Typography
+$base-font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$heading-font-weight: 1000; // Adjust as necessary
+$base-font-size: 16px; // Adjust as necessary
+
+// Mixins for common styles
+@mixin flex-center {
   display: flex;
+  justify-content: center;
   align-items: center;
+}
 
-  ul {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
+// Navbar styles
+.navbar {
+  @include flex-center;
+  background-color: $primary-color;
+  padding: 1rem 0;
 
-    li {
-      margin-right: 1.2rem;
+  .navbar-nav {
+    @include flex-center;
 
-      a {
+    .nav-item {
+      margin-right: 1rem;
+
+      .nav-link {
+        color: $secondary-color;
         text-decoration: none;
-        color: $chicago-light-grey;
-        font-family: $font-stack;
-
+        
         &:hover {
-          color: $chicago-dark-grey;
+          color: $link-hover-color;
         }
 
-        &.active,
-        &.bold {
-          color: $white;
-          font-weight: bold;
-          font-size: 18px;
+        &.active {
+          color: $background-color;
+          font-weight: $heading-font-weight;
         }
       }
     }
   }
 }
 
-@mixin flex-container {
-  display: flex;
-  align-items: center;
-  padding: 1.2rem;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+// Global styles
+body {
+  font-family: $base-font-family;
+  background-color: $background-color;
+  color: $text-color;
+  font-size: $base-font-size;
 }
 
-.navbar {
-  @include flex-container;
-  background-color: $chicago-maroon;
+// Heading styles
+h1, h2 {
+  color: $primary-color;
 }
 
+// Additional elements
+p, a {
+  color: $secondary-color;
+  
+  &:hover {
+    color: $link-hover-color;
+  }
+}
+
+// Footer styles (if there's a footer)
 .footer {
-  @include flex-container;
-  background-color: $chicago-light-grey;
+  background-color: $secondary-color;
+  @include flex-center;
+  padding: 1rem;
 }
 
-@mixin button($bgColor, $textColor) {
-  display: flex;
-  background-color: $bgColor;
-  color: $textColor;
+// Button styles (if there are buttons)
+.button {
+  background-color: $text-color;
+  color: $background-color;
+  border: none;
+  padding: 0.5rem 1rem;
+
+  &:hover {
+    background-color: darken($text-color, 10%);
+  }
 }
-
-.black-button {
-  @include button(#000000, #FFFFFF);
-}
-
-
-h1 {
-  margin-left: $std-margin-left;
-  color: $black;
-}
-
-h3 {
-  margin-left: $std-margin-left;
-  color: $chicago-dark-grey;
-}
-
