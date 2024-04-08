@@ -46,15 +46,14 @@ table {
     list-style-type: square; /* Square list item markers */
   }
   
-  .d > li > ul {
+  .d li {
     list-style-type: none; /* Remove default list item markers */
   }
   
-  .d > li > ul > li:before {
+  .d li:before {
     content: "$\0020"; /* Dollar sign followed by a space */
-  }
+  }  
   
-
   a {
     text-decoration: none;
   }
@@ -68,7 +67,7 @@ table {
   }
   
   a#not-nav:hover {
-    color: #007bff; /* Bootstrap's primary blue color for a modern look */
+    color: hotpink; 
   }
 
   :not(.navbar-nav) li::first-letter {
