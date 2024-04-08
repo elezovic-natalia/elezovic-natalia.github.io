@@ -1,0 +1,86 @@
+h1::first-letter {
+    color:#007bff; 
+    font-size:40;
+    font-family:'Times New Roman', Times, serif;
+}
+
+h1, h2 {
+    font-family:'Times New Roman', Times, serif;
+}
+
+h3 {
+
+    color: rgb(0, 0, 77);
+    font-family:'Times New Roman', Times, serif;
+}
+
+table {
+    border-collapse: collapse; /* Collapses the border */
+  }
+  
+  th, td {
+    border: 1px solid gainsboro; /* Adds border to table header and table data */
+    font-family:'Times New Roman', Times, serif;
+    font-size: medium;
+    letter-spacing: 2px;
+  }
+  
+  .header-bg {
+    background-color: rgb(219, 227, 206); /* Background color for header */
+  }
+  
+  .data-bg {
+    background-color: papayawhip; /* Background color for data */
+  }
+  
+/* CSS to style the lists */
+.a {
+    list-style-type: lower-roman; /* Lower case roman numerals */
+  }
+  
+  .b {
+    list-style-type: lower-alpha; /* Lower case letters */
+  }
+  
+  .c {
+    list-style-type: square; /* Square list item markers */
+  }
+  
+  .d > li > ul {
+    list-style-type: none; /* Remove default list item markers */
+  }
+  
+  .d > li > ul > li:before {
+    content: "$\0020"; /* Dollar sign followed by a space */
+  }
+  
+
+  a {
+    text-decoration: none;
+  }
+  
+  a#not-nav:link {
+    color: rgba(99, 217, 48, 0.42);
+  }
+  
+  a#not-nav:visited {
+    color: rgb(69, 206, 230);
+  }
+  
+  a#not-nav:hover {
+    color: #007bff; /* Bootstrap's primary blue color for a modern look */
+  }
+
+  :not(.navbar-nav) li::first-letter {
+    color:#007bff; 
+    font-size:1.5em;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold;
+  }
+  
+/* Reset the styles for first letters in the navbar, to inherit from the parent */
+.navbar-nav li::first-letter {
+    color: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+  }
