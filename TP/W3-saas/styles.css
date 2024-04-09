@@ -1,180 +1,62 @@
-/* General reset for link styles */
-a {
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #800000;
+  padding: 1rem 0;
+}
+.navbar .navbar-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar .navbar-nav .nav-item {
+  margin-right: 1rem;
+}
+.navbar .navbar-nav .nav-item .nav-link {
+  color: #D6D6CE;
   text-decoration: none;
-  color: inherit;
+}
+.navbar .navbar-nav .nav-item .nav-link:hover {
+  color: #767676;
+}
+.navbar .navbar-nav .nav-item .nav-link.active {
+  color: #FFFFFF;
+  font-weight: 1000;
 }
 
-/* Base body styles */
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   background-color: #FFFFFF;
   color: #000000;
   font-size: 16px;
-  margin: 0;
-  padding: 0;
 }
 
-/* Navbar styles */
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #800000;
-  padding: 1rem 2rem; /* Increased padding for better spacing */
-}
-
-.navbar .navbar-nav .nav-item {
-  margin-right: 1rem;
-}
-
-.navbar .navbar-nav .nav-item .nav-link {
-  color: #FFFFFF; /* Changed to white for better contrast */
-  padding: 0.5rem 1rem; /* Padding for a more button-like appearance */
-  transition: color 0.3s; /* Smooth transition for hover effects */
-}
-
-.navbar .navbar-nav .nav-item .nav-link:hover,
-.navbar .navbar-nav .nav-item .nav-link:focus {
-  color: #767676; /* Grey color for hover and focus states */
-  background-color: rgba(255, 255, 255, 0.2); /* Slight background on hover/focus */
-}
-
-.navbar .navbar-nav .nav-item .nav-link.active {
-  font-weight: 1000; /* Keep the bold weight for active link */
-  background-color: transparent; /* No background color for the active state */
-}
-
-/* Heading styles */
 h1, h2 {
-  color: #800000; /* Maroon color for headings to match navbar */
-  font-weight: normal; /* Normal weight for headings */
-  margin: 1rem 0; /* Spacing around headings */
+  color: #800000;
 }
 
-/* Paragraph and link styles */
-p, .navbar .navbar-nav .nav-item .nav-link {
-  color: #D6D6CE; /* Light grey color for text */
-  font-size: 1rem; /* Standard font size for readability */
-  line-height: 1.6; /* Line height for better readability */
+p, a {
+  color: #D6D6CE;
+}
+p:hover, a:hover {
+  color: #767676;
 }
 
-/* Hover effect for all links, not just p and a */
-a:hover {
-  color: #767676; /* Consistent hover color across all links */
-}
-
-/* Footer styles */
 .footer {
-  background-color: #800000; /* Maroon background to match navbar */
-  color: #FFFFFF; /* White text color for contrast */
+  background-color: #D6D6CE;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 1rem;
-  margin-top: 2rem; /* Space from the content to footer */
 }
 
-/* Button styles */
 .button {
-  background-color: #ffffff; /* Black background for buttons */
-  color: #FFFFFF; /* White text for buttons */
-  border: 1px solid transparent; /* Add border to maintain layout on hover */
-  padding: 0.5rem 1rem; /* Padding for buttons */
-  transition: background-color 0.3s; /* Smooth transition for background color */
+  background-color: #000000;
+  color: #FFFFFF;
+  border: none;
+  padding: 0.5rem 1rem;
 }
-
 .button:hover {
-  background-color: #ffffff; /* Darker background on hover for buttons */
-}
-
-/* Source map comment can be removed if not used */
-/* General reset for link styles */
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-/* Base body styles */
-body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background-color: #FFFFFF;
-  color: #000000;
-  font-size: 16px;
-  margin: 0;
-  padding: 0;
-}
-
-/* Navbar styles */
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #800000;
-  padding: 1rem 2rem; /* Increased padding for better spacing */
-}
-
-.navbar .navbar-nav .nav-item {
-  margin-right: 1rem;
-}
-
-.navbar .navbar-nav .nav-item .nav-link {
-  color: #FFFFFF; /* Changed to white for better contrast */
-  padding: 0.5rem 1rem; /* Padding for a more button-like appearance */
-  transition: color 0.3s; /* Smooth transition for hover effects */
-}
-
-.navbar .navbar-nav .nav-item .nav-link:hover,
-.navbar .navbar-nav .nav-item .nav-link:focus {
-  color: #767676; /* Grey color for hover and focus states */
-  background-color: rgba(255, 255, 255, 0.2); /* Slight background on hover/focus */
-}
-
-.navbar .navbar-nav .nav-item .nav-link.active {
-  font-weight: 1000; /* Keep the bold weight for active link */
-  background-color: transparent; /* No background color for the active state */
-}
-
-/* Heading styles */
-h1, h2 {
-  color: #800000; /* Maroon color for headings to match navbar */
-  font-weight: normal; /* Normal weight for headings */
-  margin: 1rem 0; /* Spacing around headings */
-}
-
-/* Paragraph and link styles */
-p, .navbar .navbar-nav .nav-item .nav-link {
-  color: #D6D6CE; /* Light grey color for text */
-  font-size: 1rem; /* Standard font size for readability */
-  line-height: 1.6; /* Line height for better readability */
-}
-
-/* Hover effect for all links, not just p and a */
-a:hover {
-  color: #767676; /* Consistent hover color across all links */
-}
-
-/* Footer styles */
-.footer {
-  background-color: #800000; /* Maroon background to match navbar */
-  color: #FFFFFF; /* White text color for contrast */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 1rem;
-  margin-top: 2rem; /* Space from the content to footer */
-}
-
-/* Button styles */
-.button {
-  background-color: #000000; /* Black background for buttons */
-  color: #FFFFFF; /* White text for buttons */
-  border: 1px solid transparent; /* Add border to maintain layout on hover */
-  padding: 0.5rem 1rem; /* Padding for buttons */
-  transition: background-color 0.3s; /* Smooth transition for background color */
-}
-
-.button:hover {
-  background-color: #333333; /* Darker background on hover for buttons */
-}
-
-/* Source map comment can be removed if not used */
+  background-color: black;
+}/*# sourceMappingURL=styles.css.map */
