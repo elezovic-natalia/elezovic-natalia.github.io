@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sort and Display Last Item</title>
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+rel="stylesheet" 
+integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
+crossorigin="anonymous">
+<link href="CSS/css/navbar.css" rel="stylesheet">
+
+<!-- Link to the external .css file -->
+<link href="CSS/css/chalkboard06.css" rel="stylesheet">
+
+<!-- Link to the external .js file -->
+<script src="javascript/chalkboard06.js"></script>
+<!-- Inline styles to ensure they load -->
+<style>
+    /* Center the content */
+    .center-content {
+      min-height: 60vh; /* Adjusted height for centering the content area */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    /* Style the output div for a cleaner look */
+    #output {
+      padding: 1rem;
+      margin-top: 1rem; /* Space out the output from the button */
+      border: 1px solid #ddd; /* Light border for definition */
+      width: 100%;
+      max-width: 600px; /* Limit the width to keep it readable */
+      box-shadow: 0 2px 4px rgba(0,0,0,.1); /* Subtle shadow for depth */
+    }
+  </style>
+
+</head>
+<body>
+
+  <!-- Navigation bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="../index.html">Home</a> <!-- Home Button -->
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a> <!-- About Button -->
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a> <!-- Contact Button -->
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownTechnical" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Technical Assignments <!-- TP Button -->
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownTechnical">
+            <a class="dropdown-item" href="../TP/technical02.html">Technical Assignment 02</a>
+            <a class="dropdown-item" href="../TP/technical03.html">Technical Assignment 03</a>
+            <a class="dropdown-item" href="../TP/technical04.html">Technical Assignment 04</a>
+            <a class="dropdown-item" href="../TP/technical05.html">Technical Assignment 05</a>
+
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownDigital" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Digital Chalkboard <!-- DC Button -->
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownDigital">
+            <a class="dropdown-item" href="chalkboard03.html">Digital Chalkboard 03</a>
+            <a class="dropdown-item" href="chalkboard04.html">Digital Chalkboard 04</a>
+            <a class="dropdown-item" href="chalkboard05.html">Digital Chalkboard 05</a>
+            <a class="dropdown-item" href="chalkboard06.html">Digital Chalkboard 06</a>
+
+          </div>
+        </li>        
+      </ul>
+    </div>
+  </nav>
+  <!-- End of Navigation bar -->
+
+  <!-- Page Heading -->
+  <div class="container mt-4 text-center">
+    <h1 class="display-3">Week 6 Assignment</h1>
+    <p class="lead">Digital Chalkboard 06 covered creating two two Javascript functions; one that implements lastItem() to sort hard-coded values alphabetically, the other to ask for input from the user with prompt(), sorting values, and returning both the original array and sorted array.</p>
+  </div>
+
+<!-- The default values are listed outside the button click -->
+<p>Our default values are: Watermelon, Apple, Orange, Kiwi, Peach</p>
+
+<!-- Updated button text to 'Sort' -->
+<button onclick="lastItem(['Watermelon', 'Apple', 'Orange', 'Kiwi', 'Peach'])">Sort</button>
+
+<!-- This div is where the output from the lastItem function will be displayed -->
+<div id="output"></div>
+
+  <!-- Centered content area for the function -->
+  <div class="center-content text-center">
+    <!-- Button to trigger the getUserInput function -->
+    <button onclick="getUserInput()" class="btn btn-danger btn-lg">Sort User Input</button>
+    <!-- Output div to display the result -->
+    <div id="output"></div>
+  </div>
+
+
+</body>
+</html>

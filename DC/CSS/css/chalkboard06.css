@@ -1,0 +1,36 @@
+/* Styles for the content area where the lastItem function is displayed */
+.content-area {
+    padding: 2rem 0; /* Add padding on the top and bottom, but not on the sides */
+}
+
+/* Center the content within the content area */
+.center-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh; /* Adjusted height for centering the content area */
+}
+
+/* Style the button with Bootstrap danger color for red */
+.red-button {
+    background-color: #dc3545; /* Bootstrap red color */
+    color: white;
+    border-color: #dc3545;
+}
+
+/* Add custom padding around the button for better spacing */
+.custom-btn-padding {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* Style the output div for a cleaner look */
+.output-div {
+    padding: 1rem;
+    margin-top: 1rem; /* Space out the output from the button */
+    width: 100%; /* Ensure it spans the full width */
+    max-width: 600px; /* Limit the width to keep it readable */
+    box-shadow: 0 2px 4px rgba(0,0,0,.1); /* Subtle shadow for depth */
+    border: 1px solid #ddd; /* Light border for definition */
+}
