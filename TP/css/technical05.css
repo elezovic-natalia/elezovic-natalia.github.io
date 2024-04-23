@@ -1,0 +1,23 @@
+/* Hover effect for images to turn the border red */
+.howlerImage:hover {
+  border: 3px solid red; /* The border will appear red when hovering */
+}
+
+/* Additional styles to resize the image and center the content */
+.howlerImage {
+  max-width: 250px; /* Adjust the width as desired */
+  cursor: pointer; /* Indicates the image is clickable */
+  margin: auto; /* Centers the image */
+  display: block;
+  border: 3px solid transparent; /* Transparent border to maintain layout when not hovered */
+}
+
+/* Center the sound title text */
+.soundTitle {
+  margin-bottom: 1rem; /* Adds space below the title */
+  text-align: center; /* Aligns the title text to the center */
+}
+
+.display-3 {
+  font-weight: normal; /* Standard weight, could also use 400 */
+}

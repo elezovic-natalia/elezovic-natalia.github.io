@@ -1,0 +1,45 @@
+/* Full page container to center content */
+.full-page-container {
+  display: flex; /* Enables Flexbox */
+  flex-direction: column; /* Stack children vertically */
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  height: 100vh; /* Full viewport height */
+  text-align: center; /* Center text */
+}
+
+/* Trivia and number check containers */
+#trivia, #number-check {
+  margin: 1rem; /* Add some space around the questions */
+}
+
+/* Apply a zero margin to the body to ensure there's no unwanted space around the edges of the page */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+/* Style buttons for a consistent look and feel */
+button {
+  background-color: #f83d09;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Style inputs to match buttons and ensure consistency */
+input {
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Style the result elements to stand out when displaying feedback */
+#triviaResult, #numberCheckResult {
+  margin-top: 10px; /* Provide space above the result elements */
+  font-weight: bold;
+}

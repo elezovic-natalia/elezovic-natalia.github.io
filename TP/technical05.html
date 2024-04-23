@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Howler Jazz Sound</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="css/navbar.css" rel="stylesheet">
+    <link href="css/technical05.css" rel="stylesheet">
+    <link href="css/styles.technical04.css" rel="stylesheet">
+    <link href="css/accordions.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/howler/dist/howler.min.js"></script>
+
+</head>
+<body>
+
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Home</a> <!-- Home Button -->
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a> <!-- About Button -->
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a> <!-- Contact Button -->
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownTechnical" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Technical Assignments <!-- TP Button -->
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownTechnical">
+                <a class="dropdown-item" href="technical02.html">Technical Assignment 02</a>
+                <a class="dropdown-item" href="technical03.html">Technical Assignment 03</a>
+                <a class="dropdown-item" href="technical04.html">Technical Assignment 04</a>
+                <a class="dropdown-item" href="technical05.html">Technical Assignment 05</a>
+
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownDigital" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Digital Chalkboard <!-- DC Button -->
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownDigital">
+                <a class="dropdown-item" href="../DC/chalkboard03.html">Digital Chalkboard 03</a>
+                <a class="dropdown-item" href="../DC/chalkboard04.html">Digital Chalkboard 04</a>
+                <a class="dropdown-item" href="../DC/chalkboard05.html">Digital Chalkboard 05</a>
+              </div>
+            </li>        
+          </ul>
+        </div>
+      </nav>
+      <!-- End of Navigation bar -->
+
+  <!-- Page Heading -->
+  <div class="container mt-4 text-center">
+    <h1 class="display-3">Week 5 Assignment</h1>
+    <p class="lead">Technical Presentation 05 covers Howler JS for implementing audio in our web page. </p>
+  </div>
+
+      <!-- Howler Sound Section -->
+      <div class="container text-center mt-4">
+        <h2 class="soundTitle">Jazz Music</h2>
+        <img id="sound01" src="images/jazz.jpg" class="howlerImage" alt="Jazz Music">
+    </div>
+
+    <!-- Howler library -->
+    <script src="https://cdn.jsdelivr.net/npm/howler"></script>
+    <!-- External JavaScript file -->
+    <script src="javascript/howler.js"></script>
+</body>
+</html>
