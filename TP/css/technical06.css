@@ -1,0 +1,15 @@
+/* Example CSS for the chart container */
+.chart-container {
+    width: 80%;
+    margin: auto;
+    padding-top: 50px;
+}
+
+canvas {
+    width: 100% !important;
+    height: auto !important;
+}
+
+body {
+    font-family: Arial, sans-serif;
+  }

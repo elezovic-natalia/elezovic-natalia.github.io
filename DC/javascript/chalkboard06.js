@@ -2,9 +2,11 @@
 function lastItem(fruits) {
     // Make a copy of the original array to show later
     const originalFruits = [...fruits]; // Using spread syntax to copy the array
+
+    // Find quicker option!
   
     // Sort the fruits array alphabetically using the localeCompare method
-    fruits.sort((a, b) => a.localeCompare(b));
+    fruits.sort((a, b) => a.localeCompare(b)); 
   
     // Get the last item from the sorted array which will be the last alphabetically
     const lastAlphabetical = fruits[fruits.length - 1];
@@ -15,6 +17,8 @@ function lastItem(fruits) {
     // Note: The spaces are adjusted to ensure there are no leading spaces before commas
     outputDiv.innerHTML = `The original array is [${originalFruits.join(',')}] and I sorted it alphabetically.<br>The last item of the sorted array is ${lastAlphabetical}.`;
 }
+
+// Create an object that stores categories! 
 
 // Define the getUserInput function
 function getUserInput() {
