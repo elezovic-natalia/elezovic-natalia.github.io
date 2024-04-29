@@ -1,3 +1,5 @@
+// Code pulled from class presentation 
+
 document.addEventListener('DOMContentLoaded', function() {
     const dataPoints = [];
     let prev = 100;
