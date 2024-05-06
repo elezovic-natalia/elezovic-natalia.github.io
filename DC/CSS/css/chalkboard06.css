@@ -34,3 +34,13 @@
     box-shadow: 0 2px 4px rgba(0,0,0,.1); /* Subtle shadow for depth */
     border: 1px solid #ddd; /* Light border for definition */
 }
+
+/* Style the output div for a cleaner look */
+.output-div {
+    padding: 1rem;
+    margin-top: 1rem; /* Space out the output from the button */
+    width: 100%; /* Ensure it spans the full width */
+    max-width: 600px; /* Limit the width to keep it readable */
+    box-shadow: 0 2px 4px rgba(0,0,0,.1); /* Subtle shadow for depth */
+    border: 1px solid #ddd; /* Light border for definition */
+}
