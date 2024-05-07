@@ -1,0 +1,21 @@
+#ochreContainer {
+    text-align: center; 
+}
+
+#title {
+    font-size: 24px; 
+    margin-top: 20px; 
+    margin-bottom: 20px; 
+}
+
+.image {
+    display: block; 
+    margin: auto; 
+    max-width: 100%; 
+    height: auto; 
+}
+
+.image img {
+    width: 100%; 
+    height: auto; 
+}
