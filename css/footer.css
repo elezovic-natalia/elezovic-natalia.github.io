@@ -1,0 +1,11 @@
+footer {
+    background-color: whitesmoke;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    color:maroon;
+}
+
+.container-content {
+    min-height: calc(100vh - 150px);
+}

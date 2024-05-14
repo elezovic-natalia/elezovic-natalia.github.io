@@ -1,61 +1,39 @@
-<!-- HTML for technical presentation 2: Making a console page -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Technical Presentation 02</title>
-
-    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
-    rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link href="DC/CSS/css/navbar.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>  
+    <!-- Custom CSS to override Bootstrap -->
+    <link href="../DC/CSS/css/navbar.css" rel="stylesheet">
+    <!-- Technical Presentation specific CSS -->
     <link rel="stylesheet" href="css/technical02.css">
+    <!-- Reference JS for Navbar -->
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 </head>
 <body>
-
-  <!-- JQuery -->
-  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
-  
-  <!--Nav is loaded here via jQuery-->
-  <div id="nav-placeholder"></div>
+    <!--Nav is loaded here via jQuery-->
+    <div id="nav-placeholder"></div>
 
     <h1>Week 2 Assignment</h1>
     <h3> Technical Presentations Sessions</h3>
 
     <pre>
-
         _     __     ___       _                      ____                      _        ____                  
         / \    \ \   / (_)_ __ | |_ __ _  __ _  ___   / ___|___  _ __  ___  ___ | | ___  |  _ \ __ _  __ _  ___ 
        / _ \    \ \ / /| | '_ \| __/ _` |/ _` |/ _ \ | |   / _ \| '_ \/ __|/ _ \| |/ _ \ | |_) / _` |/ _` |/ _ \
       / ___ \    \ V / | | | | | || (_| | (_| |  __/ | |__| (_) | | | \__ \ (_) | |  __/ |  __/ (_| | (_| |  __/
      /_/   \_\    \_/  |_|_| |_|\__\__,_|\__, |\___|  \____\___/|_| |_|___/\___/|_|\___| |_|   \__,_|\__, |\___|
                                          |___/                                                       |___/                          
-
     </pre>
 
     <p id="welcome">✔ Diving deeper into VS Code Directory rules</p>
     <p id="second">✔ Exploring the connection VS Code - GitHub</p>
     <p id="third">✔ Creating tables in HTML</p>
     <p id="third">✔ Experimenting with ASCII art</p>
-
-    <pre>
-
-        .---|__| .((\=.
-     .--|===|--|/    ,(,      
-     |  |===|  |\      y
-     |%%|   |  | `.__,'
-     |%%|   |  | /  \\\       
-     |  |   |  |/|  | \`----.
-     |  |   |  ||\  \  |___.'_
-    _|  |   |__||,\  \-+-._.' )_
-   / |  |===|--|\  \  \      /  \
-      /  `--^---'--' `--`-'---^-'    
-  ================================
-
-    </pre>
-    <p>. . . Like this cat carrying a bunch of books.</p>
-    
 
     <table>
       <tr>
@@ -85,14 +63,10 @@
       </tr>
     </table>    
 
-</body>
-  
-<!-- nav.js script -->
-<script src="javascript/nav2.js"></script>
-  
-<!-- Bootstrap JavaScript -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
-integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6
+    <!--Footer is loaded here via jQuery-->
+    <div id="foot-placeholder"></div> 
 
+    <!-- Reference JS file for Navbar and Footer-->
+    <script src="../../javascript/navbar.js"></script>
 </body>
 </html>
