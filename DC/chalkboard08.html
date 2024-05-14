@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Digital Chalkboard Assignment 08</title>
+        <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+        rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <!-- <script src="javascript/chalkboard08.js"></script>   -->
+        <!-- <link href="CSS/css/chalkboard07.css" rel="stylesheet">   -->
+        <link href="CSS/css/navbar.css" rel="stylesheet">
+    </head>
+<body>
+
+  <!-- JQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+  
+  <!--Nav is loaded here via jQuery-->
+  <div id="nav-placeholder"></div>
+
+  <!-- Page Heading -->
+  <div class="container mt-4 text-center">
+    <h1 class="display-3">Week 08 Assignment</h1>
+    <p class="lead">Digital Chalkboard 08 covered MusicBrainz API. </p>
+    <input type="text" id="searchInput" placeholder="Enter artist or band name">
+        <button onclick="searchArtist()">Search</button>
+        <table id="albumTable" style="display: none;">
+    <div id="artistResults"></div>
+    <thead>
+    <tr>
+        <th>Release Date</th>
+        <th>Album Name</th>
+    </tr>
+    </thead>
+    <tbody id="albumList"></tbody>
+</table>
+</div>
+
+<script src="javascript/chalkboard08.js"></script>
+<!-- nav.js script -->
+<script src="javascript/nav.js"></script>
+  
+<!-- Bootstrap JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6
+
+</body>
+</html>

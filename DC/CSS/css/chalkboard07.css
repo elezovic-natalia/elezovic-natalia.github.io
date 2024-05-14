@@ -32,3 +32,8 @@ body, html {
 .navbar .dropdown-menu {
     z-index: 1030; /* Making sure that the entire navbar shows when map is displayed*/
 }
+
+#artistResults ul {
+    list-style-type: none !important;
+    padding-left: 0 !important;
+}

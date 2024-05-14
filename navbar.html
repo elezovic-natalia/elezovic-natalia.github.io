@@ -1,0 +1,52 @@
+<!-- Navigation bar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="../index.html">Home</a>   <!-- Home Button -->
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>   <!-- About Button -->
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>   <!-- Contact Button -->
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownTechnical" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Technical Assignments   <!-- TP Button -->
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownTechnical">
+                    <a class="dropdown-item" href="technical02.html">Technical Assignment 02</a>
+                    <a class="dropdown-item" href="../TP/technical03.html">Technical Assignment 03</a>
+                    <a class="dropdown-item" href="../TP/technical04.html">Technical Assignment 04</a>
+                    <a class="dropdown-item" href="../TP/technical05.html">Technical Assignment 05</a>
+                    <a class="dropdown-item" href="../TP/technical06.html">Technical Assignment 06</a>
+                    <a class="dropdown-item" href="../TP/technical07_01.html">Technical Assignment 07, Part 1</a>
+                    <a class="dropdown-item" href="../TP/technical07_02.html">Technical Assignment 07, Part 2</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownDigital" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Digital Chalkboard <!-- DC Button -->
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownDigital">
+                    <a class="dropdown-item" href="chalkboard03.html">Digital Chalkboard 03</a>
+                    <a class="dropdown-item" href="chalkboard04.html">Digital Chalkboard 04</a>
+                    <a class="dropdown-item" href="chalkboard05.html">Digital Chalkboard 05</a>
+                    <a class="dropdown-item" href="chalkboard06.html">Digital Chalkboard 06</a>
+                    <a class="dropdown-item" href="chalkboard07.html">Digital Chalkboard 07</a>
+                    <a class="dropdown-item" href="chalkboard08.html">Digital Chalkboard 08</a>
+
+
+                </div>
+            </li>        
+        </ul>
+    </div>
+</nav>
+<!-- End of Navigation bar -->
+
+<script>
+    var pathname = window.location.pathname;
+    var cleanPath = pathname.substring(pathname.lastIndexOf('/') + 1);
+    $('[href*="' + cleanPath + '"]').addClass('active');
+</script>
