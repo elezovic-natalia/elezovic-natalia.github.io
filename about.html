@@ -9,34 +9,58 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
     rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
-    <!-- CSS file -->
-    <link href="DC/styles.css" rel="stylesheet">
-    <link href="DC/CSS/css/navbar.css" rel="stylesheet">
-    <link rel="stylesheet" href="index.css">
-
+    <!-- CSS for Centering Image -->
+    <style>
+        .centered-img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 80%; /* Adjust width as needed */
+        }
+    </style>
+    
     <!-- Bootstrap JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 </head>
 
-<!-- JQuery -->
-<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
-  
-<!--Nav is loaded here via jQuery-->
-<div id="nav-placeholder"></div>
-
 <body>
-    <h1>Data Publication Course at The University of Chicago</h1>
-    <h2>About Section</h2>
-    <p>Note: This page will become the about section of the page. Customize. </p>
+    <!--Nav is loaded here via jQuery-->
+    <div id="nav-placeholder"></div>
+    <script src="javascript/navbar.js"></script>
 
-<script src="DC/javascript/chalkboard08.js"></script>
-<!-- nav.js script -->
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-md-7">
+                <h2>Welcome to my website!</h2>
+                <h3>About Me</h3>
+                <p>
+                    I thrive in the intersection of machine learning, data visualization, and text mining. Working in a dynamic AI consulting environment has allowed me to fine-tune my skills in collaborative project execution, crafting insightful data visualizations, and pioneering initiatives that promote best practices in data handling globally.
+                </p>
+                <p>
+                    I'm wrapping up my major in NLP and AI at the University of Chicago and graduating in June 2024. I am excited to join Bank of America as a Data Scientist / Cognitive Linguist in Chicago.
+                </p>
+                <p>Here's a snapshot of my expertise:</p>
+                <ul>
+                    <li><strong>Deep Learning & Machine Learning:</strong> Hands-on with TensorFlow, PyTorch, BERT, and more. I love turning complex theories into actionable insights.</li>
+                    <li><strong>Data Analysis & Visualization:</strong> From regression models to interactive dashboards in Tableau, I turn data into stories that drive decisions.</li>
+                    <li><strong>Coding Languages:</strong> Whether it's Python, SQL, or JavaScript, I'm all about writing clean, effective code.</li>
+                    <li><strong>Languages I Speak:</strong> Fluent in Italian and Serbian, proficient in English, and conversational in French.</li>
+                    <li><strong>Data Systems:</strong> Skilled in designing relational databases and managing data with tools like Protégé and OWL.</li>
+                    <li><strong>Favorite Tools:</strong> From Visual Studio Code to Jupyter Notebook, I use the best tools to keep my workflow efficient and collaborative.</li>
+                </ul>
+            </div>
+            <div class="col-md-5">
+                <img src="photo-personal.png" alt="Your Name" class="img-fluid rounded-circle centered-img">
+            </div>
+        </div>
+    </div>
 
-<!--Footer is loaded here via jQuery-->
-<div id="foot-placeholder"></div> 
-
-<script src="javascript/navbar.js"></script>
-  
-<!-- Bootstrap JavaScript -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
-integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6
+    <!--Footer is loaded here via jQuery-->
+    <div id="foot-placeholder"></div> 
+    <script src="DC/javascript/chalkboard08.js"></script>
+</body>
+</html>

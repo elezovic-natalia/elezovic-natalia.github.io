@@ -3,13 +3,13 @@
 }
 
 .navbar-nav .nav-link.active {
-  background-color: whitesmoke; /* Adjust the color to your preference */
+  background-color: maroon; /* Adjust the color to your preference */
   color: white; /* Optional: change the text color if needed */
 }
 
 /* Styling of navbar as shown during Technical Presentation, Week 4 */
 .navbar {
-    background-color: maroon!important; /* Sets the navbar's background color to maroon */
+    background-color: navajowhite!important; /* Sets the navbar's background color to maroon */
     padding-top: 0.5rem; /* Sets the top padding of the navbar */
     padding-bottom: 0.5rem; /* Sets the bottom padding of the navbar */
   }

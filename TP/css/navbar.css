@@ -1,6 +1,6 @@
 /* Styling of navbar as shown during Technical Presentation, Week 4 */
 .navbar {
-    background-color: maroon!important; /* Sets the navbar's background color to maroon */
+    background-color: wheat!important; /* Sets the navbar's background color to maroon */
     padding-top: 0.5rem; /* Sets the top padding of the navbar */
     padding-bottom: 0.5rem; /* Sets the bottom padding of the navbar */
   }
