@@ -13,60 +13,118 @@
     <link rel="stylesheet" href="css/technical02.css">
     <!-- Reference JS for Navbar -->
     <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <style>
+        body {
+            background-color: black !important;
+            color: white!important;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .navbar {
+            background-color: maroon !important;
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+            border: none; /* Remove borders */
+            box-shadow: none; /* Remove shadows */
+        }
+
+        .navbar .nav-link {
+            color: white !important;
+        }
+
+        .navbar .nav-link:hover, .navbar .nav-link:focus {
+            background-color: #953b39 !important;
+            color: white !important;
+        }
+
+        h1, h3 {
+            margin-top: 2rem; /* Adds space before the headings */
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            border: 2px solid green; /* Adds border to the table */
+        }
+
+        th, td {
+            border: 1px solid green;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #00FF00;
+            color: black;
+        }
+
+        .ascii-art {
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+            color: green;
+        }
+
+        .content {
+            max-width: 800px;
+            margin: auto;
+        }
+    </style>
 </head>
 <body>
     <!--Nav is loaded here via jQuery-->
     <div id="nav-placeholder"></div>
-
-    <h1>Week 2 Assignment</h1>
-    <h3> Technical Presentations Sessions</h3>
-
-    <pre>
-        _     __     ___       _                      ____                      _        ____                  
-        / \    \ \   / (_)_ __ | |_ __ _  __ _  ___   / ___|___  _ __  ___  ___ | | ___  |  _ \ __ _  __ _  ___ 
-       / _ \    \ \ / /| | '_ \| __/ _` |/ _` |/ _ \ | |   / _ \| '_ \/ __|/ _ \| |/ _ \ | |_) / _` |/ _` |/ _ \
-      / ___ \    \ V / | | | | | || (_| | (_| |  __/ | |__| (_) | | | \__ \ (_) | |  __/ |  __/ (_| | (_| |  __/
-     /_/   \_\    \_/  |_|_| |_|\__\__,_|\__, |\___|  \____\___/|_| |_|___/\___/|_|\___| |_|   \__,_|\__, |\___|
-                                         |___/                                                       |___/                          
-    </pre>
-
-    <p id="welcome">✔ Diving deeper into VS Code Directory rules</p>
-    <p id="second">✔ Exploring the connection VS Code - GitHub</p>
-    <p id="third">✔ Creating tables in HTML</p>
-    <p id="third">✔ Experimenting with ASCII art</p>
-
-    <table>
-      <tr>
-        <th>Toolbox</th>
-        <th>Superpower</th> 
-        <th>Caffeine Level</th>
-      </tr>
-      <tr>
-        <td>VS Code</td>
-        <td>Key Bindings</td> 
-        <td>☕</td>
-      </tr>
-      <tr>
-        <td>GitHub</td>
-        <td>Collaboration</td> 
-        <td>☕☕</td>
-      </tr>
-      <tr>
-        <td>HTML</td>
-        <td>Classes</td>
-        <td>☕</td>
-      </tr>
-      <tr>
-        <td>CSS</td>
-        <td>Flexbox</td>
-        <td>☕☕☕☕</td>
-      </tr>
-    </table>    
-
-    <!--Footer is loaded here via jQuery-->
-    <div id="foot-placeholder"></div> 
-
-    <!-- Reference JS file for Navbar and Footer-->
     <script src="../../javascript/navbar.js"></script>
+
+
+    <div class="container mt-4 text-center">
+      <h1 class="display-3">Week 2 Assignment </h1>
+        <div class="ascii-art">
+            <pre>
+    _     __     ___       _                      ____                      _        ____                  
+    / \    \ \   / (_)_ __ | |_ __ _  __ _  ___   / ___|___  _ __  ___  ___ | | ___  |  _ \ __ _  __ _  ___ 
+   / _ \    \ \ / /| | '_ \| __/ _` |/ _` |/ _ \ | |   / _ \| '_ \/ __|/ _ \| |/ _ \ | |_) / _` |/ _` |/ _ \
+  / ___ \    \ V / | | | | | || (_| | (_| |  __/ | |__| (_) | | | \__ \ (_) | |  __/ |  __/ (_| | (_| |  __/
+ /_/   \_\    \_/  |_|_| |_|\__\__,_|\__, |\___|  \____\___/|_| |_|___/\___/|_|\___| |_|   \__,_|\__, |\___|
+                                     |___/                                                       |___/                          
+            </pre>
+        </div>
+
+        <p>✔ Diving deeper into VS Code Directory rules</p>
+        <p>✔ Exploring the connection VS Code - GitHub</p>
+        <p>✔ Creating tables in HTML</p>
+        <p>✔ Experimenting with ASCII art</p>
+        <p>  </p>
+
+        <table>
+          <tr>
+            <th>Toolbox</th>
+            <th>Superpower</th> 
+            <th>Caffeine Level</th>
+          </tr>
+          <tr>
+            <td>VS Code</td>
+            <td>Key Bindings</td> 
+            <td>☕</td>
+          </tr>
+          <tr>
+            <td>GitHub</td>
+            <td>Collaboration</td> 
+            <td>☕☕</td>
+          </tr>
+          <tr>
+            <td>HTML</td>
+            <td>Classes</td>
+            <td>☕</td>
+          </tr>
+          <tr>
+            <td>CSS</td>
+            <td>Flexbox</td>
+            <td>☕☕☕☕</td>
+          </tr>
+        </table>    
+    </div>
+
 </body>
 </html>

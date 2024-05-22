@@ -27,6 +27,7 @@
   .navbar-nav .nav-item {
     position: relative; /* Allows absolute positioning of nested elements */
     padding: 20px; /* Adds horizontal padding to each nav item */
+    outline: none; /* Removes default outline on focus */
   }
   
   .navbar-nav .nav-link {

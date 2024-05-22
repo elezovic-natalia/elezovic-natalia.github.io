@@ -39,7 +39,7 @@
   }
   
   .navbar-nav .nav-link {
-    color: white; /* Sets the text color of nav links to white */
+    color: maroon; /* Sets the text color of nav links to white */
     padding: 0.5rem 1rem; /* Adds padding around nav links */
     text-decoration: none; /* Removes underline from nav links */
     border-radius: 20px; /* Rounds the corners of nav link backgrounds */
